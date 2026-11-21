@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+
+<html lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Anggun Adha Hanifa — Creative Portfolio</title>
+<!-- Google Fonts: Cormorant Garamond, Caveat, and Lora -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&amp;family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&amp;family=Lora:ital,wght@0,400;0,500;0,600;1,400&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS v3 CDN with forms and container-queries plugins -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Configuration -->
+<script data-purpose="tailwind-config">
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'dusty-pink': '#E8B9B8',
+            'choc-dark': '#4A211B',
+            'choc-mid': '#54271F',
+            'ivory-warm': '#F8F1D8',
+            'ivory-light': '#FBF7E9',
+            'sage-pale': '#D9D9A8',
+            'gold-muted': '#B59A4D',
+          },
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+            hand: ['"Caveat"', 'cursive'],
+            body: ['"Lora"', 'Georgia', 'serif'],
+          },
+        },
+      },
+    };
+  </script>
+<!-- Custom CSS: Grid Patterns & Paper Textures -->
+<style data-purpose="grid-and-paper-textures">
+    body {
+      background-color: #E8B9B8;
+      color: #4A211B;
+      font-family: 'Lora', Georgia, serif;
+    }
+
+    /* Fine square grid on dark chocolate brown */
+    .bg-grid-choc {
+      background-color: #4A211B;
+      background-image:
+        linear-gradient(to right, rgba(248, 241, 216, 0.08) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(248, 241, 216, 0.08) 1px, transparent 1px);
+      background-size: 32px 32px;
+    }
+
+    /* Fine square grid on warm ivory */
+    .bg-grid-ivory {
+      background-color: #FBF7E9;
+      background-image:
+        linear-gradient(to right, rgba(74, 33, 27, 0.07) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(74, 33, 27, 0.07) 1px, transparent 1px);
+      background-size: 28px 28px;
+    }
+
+    /* Fine square grid on pale sage */
+    .bg-grid-sage {
+      background-color: #D9D9A8;
+      background-image:
+        linear-gradient(to right, rgba(74, 33, 27, 0.09) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(74, 33, 27, 0.09) 1px, transparent 1px);
+      background-size: 28px 28px;
+    }
+
+    /* Subtle paper shadow */
+    .paper-shadow {
+      box-shadow:
+        0 10px 25px -5px rgba(74, 33, 27, 0.18),
+        0 4px 10px -2px rgba(74, 33, 27, 0.1);
+    }
+
+    /* Dotted halftone pattern */
+    .halftone-dots {
+      background-image: radial-gradient(#4A211B 1.25px, transparent 1.25px);
+      background-size: 7px 7px;
+    }
+  </style>
+<!-- Custom CSS: Scrapbook Tape & Decorative Elements -->
+<style data-purpose="scrapbook-decorations">
+    /* Dark masking tape with tiny star/floral dots */
+    .masking-tape {
+      background-color: #4A211B;
+      background-image: radial-gradient(rgba(248, 241, 216, 0.55) 1.2px, transparent 1.2px);
+      background-size: 10px 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.18);
+      opacity: 0.92;
+    }
+
+    /* Double thin outline for hero card */
+    .double-outline-card {
+      outline: 1.5px solid rgba(248, 241, 216, 0.55);
+      outline-offset: 6px;
+    }
+  </style>
+</head>
+<body class="min-h-screen py-8 px-4 sm:px-6 lg:px-8 selection:bg-choc-dark selection:text-ivory-warm">
+<!-- Main centered vertical composition -->
+<main class="max-w-[1150px] mx-auto space-y-12 sm:space-y-16">
+<!-- BEGIN: CoverHeroSection -->
+<section aria-label="Cover Portfolio" class="bg-grid-choc rounded-sm p-6 sm:p-12 md:p-16 paper-shadow relative overflow-hidden" data-purpose="hero-section">
+<!-- Large warm-ivory paper card, slightly rotated -->
+<div class="relative max-w-4xl mx-auto bg-ivory-warm rounded-md p-6 sm:p-10 md:p-12 paper-shadow double-outline-card transform -rotate-1 transition-transform duration-300 hover:rotate-0">
+<!-- Metallic Paper Clip at top center -->
+<div aria-hidden="true" class="absolute -top-7 left-1/2 -translate-x-1/2 w-12 h-16 pointer-events-none z-20">
+<svg class="w-full h-full drop-shadow-md" fill="none" viewbox="0 0 48 64">
+<path d="M16 18V46C16 52.6274 21.3726 58 28 58C34.6274 58 40 52.6274 40 46V14C40 7.37258 34.6274 2 28 2C21.3726 2 16 7.37258 16 14V42C16 45.3137 18.6863 48 22 48C25.3137 48 28 45.3137 28 42V16" stroke="#8C8C8C" stroke-linecap="round" stroke-width="3.5"></path>
+<path d="M16 18V46C16 52.6274 21.3726 58 28 58C34.6274 58 40 52.6274 40 46V14C40 7.37258 34.6274 2 28 2C21.3726 2 16 7.37258 16 14V42C16 45.3137 18.6863 48 22 48C25.3137 48 28 45.3137 28 42V16" stroke="#E5E5E5" stroke-linecap="round" stroke-width="1.2"></path>
+</svg>
+</div>
+<!-- Decorative Gold Stars -->
+<svg aria-hidden="true" class="absolute top-5 left-5 w-6 h-6 text-gold-muted" fill="currentColor" viewbox="0 0 24 24">
+<path d="M12 1L14.8 8.5L22.5 9.2L16.5 14.3L18.4 22L12 17.8L5.6 22L7.5 14.3L1.5 9.2L9.2 8.5L12 1Z"></path>
+</svg>
+<svg aria-hidden="true" class="hidden sm:block absolute bottom-20 left-1/2 w-5 h-5 text-gold-muted" fill="currentColor" viewbox="0 0 24 24">
+<path d="M12 1L14.8 8.5L22.5 9.2L16.5 14.3L18.4 22L12 17.8L5.6 22L7.5 14.3L1.5 9.2L9.2 8.5L12 1Z"></path>
+</svg>
+<!-- Dotted Halftone Detail -->
+<div aria-hidden="true" class="hidden md:block absolute bottom-16 right-1/3 w-20 h-20 halftone-dots opacity-25 transform rotate-12 pointer-events-none"></div>
+<!-- Card Content Grid -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center pt-4">
+<!-- Left: Editorial Typography -->
+<div class="md:col-span-7 space-y-4">
+<p class="text-xs tracking-[0.25em] uppercase text-choc-mid font-semibold">
+              Personal Portfolio
+            </p>
+<h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold uppercase tracking-tight leading-[0.95] text-choc-dark">
+              Creative<br/>Portfolio
+            </h1>
+<p class="font-hand text-4xl sm:text-5xl text-choc-dark pt-1">
+              Anggun Adha Hanifa
+            </p>
+<p class="text-xs sm:text-sm tracking-[0.2em] uppercase text-choc-mid font-medium pt-1">
+              Information Systems Student
+            </p>
+<!-- Decorative Barcode near lower edge -->
+<div aria-hidden="true" class="pt-6 flex items-center gap-3">
+<div class="flex items-end h-8 gap-[2px] opacity-80">
+<span class="w-[2px] h-full bg-choc-dark"></span>
+<span class="w-[1px] h-full bg-choc-dark"></span>
+<span class="w-[3px] h-full bg-choc-dark"></span>
+<span class="w-[1px] h-full bg-choc-dark"></span>
+<span class="w-[2px] h-full bg-choc-dark"></span>
+<span class="w-[4px] h-full bg-choc-dark"></span>
+<span class="w-[1px] h-full bg-choc-dark"></span>
+<span class="w-[2px] h-full bg-choc-dark"></span>
+<span class="w-[1px] h-full bg-choc-dark"></span>
+<span class="w-[3px] h-full bg-choc-dark"></span>
+<span class="w-[2px] h-full bg-choc-dark"></span>
+<span class="w-[1px] h-full bg-choc-dark"></span>
+<span class="w-[3px] h-full bg-choc-dark"></span>
+<span class="w-[2px] h-full bg-choc-dark"></span>
+<span class="w-[1px] h-full bg-choc-dark"></span>
+<span class="w-[4px] h-full bg-choc-dark"></span>
+<span class="w-[1px] h-full bg-choc-dark"></span>
+<span class="w-[2px] h-full bg-choc-dark"></span>
+</div>
+<span class="text-[10px] tracking-widest text-choc-mid uppercase">ITPLN · 202632013</span>
+</div>
+</div>
+<!-- Right: Framed Decorative Paper-Collage / Sketchbook Placeholder -->
+<div class="md:col-span-5 flex justify-center">
+<div class="relative bg-ivory-light p-3 pb-6 border border-choc-dark/20 shadow-md transform rotate-2 w-full max-w-[260px]">
+<!-- Masking tape on top corner -->
+<div class="masking-tape w-16 h-5 absolute -top-2.5 left-1/2 -translate-x-1/2 -rotate-3"></div>
+<!-- Decorative Botanical & Sketchbook Collage SVG -->
+<div class="bg-sage-pale/45 border border-choc-dark/15 aspect-[4/5] flex flex-col items-center justify-center p-4 text-center relative overflow-hidden">
+<svg class="w-full h-full" fill="none" viewbox="0 0 180 220">
+<!-- Torn paper background layer -->
+<path d="M18 32L162 24L154 188L24 196Z" fill="#FBF7E9" stroke="#4A211B" stroke-dasharray="3 3" stroke-width="1"></path>
+<!-- Botanical stem & leaves -->
+<path d="M90 175C90 140 88 95 92 52" stroke="#4A211B" stroke-linecap="round" stroke-width="1.8"></path>
+<path d="M90 135C70 128 58 112 62 98C76 102 88 118 90 135Z" fill="#D9D9A8" stroke="#4A211B" stroke-width="1.4"></path>
+<path d="M90 112C112 104 124 88 120 74C106 78 94 95 90 112Z" fill="#E8B9B8" stroke="#4A211B" stroke-width="1.4"></path>
+<path d="M91 84C75 76 68 62 72 50C84 54 90 68 91 84Z" fill="#B59A4D" fill-opacity="0.45" stroke="#4A211B" stroke-width="1.4"></path>
+<!-- Small gold star -->
+<path d="M132 45L134 51L140 52L135 56L136 62L132 59L128 62L129 56L124 52L130 51Z" fill="#B59A4D"></path>
+<!-- Sketchbook label -->
+<text fill="#4A211B" font-family="Caveat, cursive" font-size="14" text-anchor="middle" x="90" y="206">
+                    sketchbook &amp; notes
+                  </text>
+</svg>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: CoverHeroSection -->
+<!-- BEGIN: WhyExploreSection -->
+<section aria-label="Why Explore My Portfolio" class="bg-grid-ivory rounded-sm p-6 sm:p-10 md:p-14 paper-shadow" data-purpose="why-explore-section">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4 pb-10 border-b border-choc-dark/15">
+<h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold uppercase tracking-tight text-choc-dark leading-none">
+          Why Explore<br/>My Portfolio?
+        </h2>
+<div class="md:text-right">
+<p class="text-xs tracking-[0.2em] uppercase font-semibold text-choc-dark">
+            My Creative Approach
+          </p>
+<p class="text-xs tracking-[0.15em] uppercase text-choc-mid mt-1">
+            Curiosity · Creativity · Technology
+          </p>
+</div>
+</div>
+<!-- Four Tilted Sticky-Note Cards -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 pt-10">
+<!-- Sticky Note 1: Curious -->
+<article class="relative bg-ivory-warm p-6 pt-8 paper-shadow transform -rotate-2 hover:rotate-0 transition-transform duration-200 border border-choc-dark/10">
+<div class="masking-tape w-20 h-5 absolute -top-2.5 left-1/2 -translate-x-1/2 rotate-2"></div>
+<h3 class="font-hand text-2xl font-bold text-choc-dark mb-2">Curious</h3>
+<p class="text-sm leading-relaxed text-choc-mid">
+            I enjoy learning new things and exploring ideas from different perspectives.
+          </p>
+<svg aria-hidden="true" class="w-4 h-4 text-gold-muted mt-4 ml-auto" fill="currentColor" viewbox="0 0 24 24">
+<path d="M12 1L14.8 8.5L22.5 9.2L16.5 14.3L18.4 22L12 17.8L5.6 22L7.5 14.3L1.5 9.2L9.2 8.5L12 1Z"></path>
+</svg>
+</article>
+<!-- Sticky Note 2: Creative -->
+<article class="relative bg-ivory-warm p-6 pt-8 paper-shadow transform rotate-2 hover:rotate-0 transition-transform duration-200 border border-choc-dark/10">
+<div class="masking-tape w-20 h-5 absolute -top-2.5 left-1/2 -translate-x-1/2 -rotate-2"></div>
+<h3 class="font-hand text-2xl font-bold text-choc-dark mb-2">Creative</h3>
+<p class="text-sm leading-relaxed text-choc-mid">
+            I like expressing ideas through writing, drawing, and visual storytelling.
+          </p>
+<svg aria-hidden="true" class="w-4 h-4 text-gold-muted mt-4 ml-auto" fill="currentColor" viewbox="0 0 24 24">
+<path d="M12 1L14.8 8.5L22.5 9.2L16.5 14.3L18.4 22L12 17.8L5.6 22L7.5 14.3L1.5 9.2L9.2 8.5L12 1Z"></path>
+</svg>
+</article>
+<!-- Sticky Note 3: Detail-Oriented -->
+<article class="relative bg-ivory-warm p-6 pt-8 paper-shadow transform -rotate-1 hover:rotate-0 transition-transform duration-200 border border-choc-dark/10">
+<div class="masking-tape w-20 h-5 absolute -top-2.5 left-1/2 -translate-x-1/2 rotate-1"></div>
+<h3 class="font-hand text-2xl font-bold text-choc-dark mb-2">Detail-Oriented</h3>
+<p class="text-sm leading-relaxed text-choc-mid">
+            I value neatness, clarity, and attention to detail in the things I create.
+          </p>
+<svg aria-hidden="true" class="w-4 h-4 text-gold-muted mt-4 ml-auto" fill="currentColor" viewbox="0 0 24 24">
+<path d="M12 1L14.8 8.5L22.5 9.2L16.5 14.3L18.4 22L12 17.8L5.6 22L7.5 14.3L1.5 9.2L9.2 8.5L12 1Z"></path>
+</svg>
+</article>
+<!-- Sticky Note 4: Adaptable -->
+<article class="relative bg-ivory-warm p-6 pt-8 paper-shadow transform rotate-2 hover:rotate-0 transition-transform duration-200 border border-choc-dark/10">
+<div class="masking-tape w-20 h-5 absolute -top-2.5 left-1/2 -translate-x-1/2 -rotate-3"></div>
+<h3 class="font-hand text-2xl font-bold text-choc-dark mb-2">Adaptable</h3>
+<p class="text-sm leading-relaxed text-choc-mid">
+            I am open to learning, trying new things, and developing my skills.
+          </p>
+<svg aria-hidden="true" class="w-4 h-4 text-gold-muted mt-4 ml-auto" fill="currentColor" viewbox="0 0 24 24">
+<path d="M12 1L14.8 8.5L22.5 9.2L16.5 14.3L18.4 22L12 17.8L5.6 22L7.5 14.3L1.5 9.2L9.2 8.5L12 1Z"></path>
+</svg>
+</article>
+</div>
+</section>
+<!-- END: WhyExploreSection -->
+<!-- BEGIN: AboutMeProfileSection -->
+<section aria-label="About Me and Personal Profile" class="rounded-sm overflow-hidden paper-shadow grid grid-cols-1 lg:grid-cols-12" data-purpose="about-profile-section">
+<!-- Left Panel: Dark Chocolate Brown with Fine Grid -->
+<div class="lg:col-span-6 bg-grid-choc text-ivory-warm p-8 sm:p-12 flex flex-col justify-between relative">
+<div>
+<p class="text-xs tracking-[0.22em] uppercase text-gold-muted font-semibold mb-2">
+            A Little About Me
+          </p>
+<h2 class="font-hand text-4xl sm:text-5xl text-ivory-light mb-6">
+            Hey, I'm Anggun
+          </h2>
+<p class="text-sm sm:text-base leading-relaxed text-ivory-warm/90">
+            Halo, aku Anggun Adha Hanifa, mahasiswa Program Studi Sistem Informasi di ITPLN. Aku tertarik pada dunia kreativitas dan teknologi. Aku senang menulis, menggambar, membaca, mengambil foto, dan menari. Bagiku, Sistem Informasi bukan hanya tentang logika, tetapi juga tentang bagaimana ide dan kreativitas dapat dipadukan dengan teknologi untuk menghasilkan sesuatu yang bermanfaat.
+          </p>
+</div>
+<!-- Decorative handwritten note -->
+<div class="mt-8 pt-6 border-t border-ivory-warm/15 flex items-center justify-between">
+<span class="font-hand text-xl text-gold-muted">curious mind · creative heart</span>
+<svg aria-hidden="true" class="w-5 h-5 text-gold-muted" fill="currentColor" viewbox="0 0 24 24">
+<path d="M12 1L14.8 8.5L22.5 9.2L16.5 14.3L18.4 22L12 17.8L5.6 22L7.5 14.3L1.5 9.2L9.2 8.5L12 1Z"></path>
+</svg>
+</div>
+</div>
+<!-- Right Panel: Pale Sage Notebook Grid with Cream Profile Card -->
+<div class="lg:col-span-6 bg-grid-sage p-8 sm:p-12 flex items-center justify-center">
+<div class="relative bg-ivory-light w-full max-w-md p-6 sm:p-8 paper-shadow border border-choc-dark/15">
+<!-- Paper Clip at top -->
+<div aria-hidden="true" class="absolute -top-6 right-8 w-9 h-12 pointer-events-none">
+<svg class="w-full h-full drop-shadow" fill="none" viewbox="0 0 48 64">
+<path d="M16 18V46C16 52.6274 21.3726 58 28 58C34.6274 58 40 52.6274 40 46V14C40 7.37258 34.6274 2 28 2C21.3726 2 16 7.37258 16 14V42C16 45.3137 18.6863 48 22 48C25.3137 48 28 45.3137 28 42V16" stroke="#8C8C8C" stroke-linecap="round" stroke-width="3.5"></path>
+</svg>
+</div>
+<h3 class="font-serif text-2xl sm:text-3xl font-bold uppercase tracking-wide text-choc-dark border-b-2 border-choc-dark pb-2 mb-4">
+            Personal Profile
+          </h3>
+<!-- Profile Data Table -->
+<dl class="divide-y divide-choc-dark/15 text-xs sm:text-sm">
+<div class="py-2.5 grid grid-cols-3 gap-2">
+<dt class="font-semibold uppercase tracking-wider text-choc-mid">Name</dt>
+<dd class="col-span-2 text-choc-dark font-medium">Anggun Adha Hanifa</dd>
+</div>
+<div class="py-2.5 grid grid-cols-3 gap-2">
+<dt class="font-semibold uppercase tracking-wider text-choc-mid">Campus</dt>
+<dd class="col-span-2 text-choc-dark">ITPLN</dd>
+</div>
+<div class="py-2.5 grid grid-cols-3 gap-2">
+<dt class="font-semibold uppercase tracking-wider text-choc-mid">Study Program</dt>
+<dd class="col-span-2 text-choc-dark">Sistem Informasi</dd>
+</div>
+<div class="py-2.5 grid grid-cols-3 gap-2">
+<dt class="font-semibold uppercase tracking-wider text-choc-mid">Student ID</dt>
+<dd class="col-span-2 text-choc-dark font-mono">202632013</dd>
+</div>
+<div class="py-2.5 grid grid-cols-3 gap-2">
+<dt class="font-semibold uppercase tracking-wider text-choc-mid">Interests</dt>
+<dd class="col-span-2 text-choc-dark">Writing, Drawing, Reading, Photography, Dance</dd>
+</div>
+<div class="py-2.5 grid grid-cols-3 gap-2">
+<dt class="font-semibold uppercase tracking-wider text-choc-mid">Personality</dt>
+<dd class="col-span-2 text-choc-dark">Curious, creative, detail-oriented</dd>
+</div>
+</dl>
+</div>
+</div>
+</section>
+<!-- END: AboutMeProfileSection -->
+<!-- BEGIN: ThingsILoveSection -->
+<section aria-label="Things I Love" class="bg-grid-ivory rounded-sm p-6 sm:p-10 md:p-14 paper-shadow" data-purpose="hobbies-section">
+<!-- Section Heading -->
+<div class="text-center mb-10">
+<h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold uppercase tracking-tight text-choc-dark">
+          Things I Love
+        </h2>
+<p class="font-hand text-2xl sm:text-3xl text-choc-mid mt-1">
+          little things that inspire me ✦
+        </p>
+</div>
+<!-- Five Cream Paper-Framed Hobby Cards -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+<!-- Hobby 1: Writing -->
+<article class="relative bg-ivory-warm p-5 pt-7 border border-choc-dark/15 paper-shadow transform -rotate-1 hover:rotate-0 transition-transform duration-200 flex flex-col">
+<div class="masking-tape w-14 h-4 absolute -top-2 left-1/2 -translate-x-1/2 rotate-2"></div>
+<div class="bg-ivory-light border border-choc-dark/10 h-28 flex items-center justify-center mb-4">
+<!-- Minimalist Fountain Pen / Notebook SVG -->
+<svg class="w-12 h-12 text-choc-dark" fill="none" viewbox="0 0 64 64">
+<rect height="44" rx="2" stroke="currentColor" stroke-width="2" width="36" x="14" y="10"></rect>
+<line stroke="currentColor" stroke-width="1.5" x1="22" x2="42" y1="22" y2="22"></line>
+<line stroke="currentColor" stroke-width="1.5" x1="22" x2="42" y1="30" y2="30"></line>
+<line stroke="currentColor" stroke-width="1.5" x1="22" x2="34" y1="38" y2="38"></line>
+</svg>
+</div>
+<h3 class="font-serif text-lg font-bold uppercase tracking-wide text-choc-dark mb-1">Writing</h3>
+<p class="text-xs leading-relaxed text-choc-mid">
+            A space to arrange thoughts and tell stories through words.
+          </p>
+</article>
+<!-- Hobby 2: Drawing -->
+<article class="relative bg-ivory-warm p-5 pt-7 border border-choc-dark/15 paper-shadow transform rotate-1 hover:rotate-0 transition-transform duration-200 flex flex-col">
+<div class="masking-tape w-14 h-4 absolute -top-2 left-1/2 -translate-x-1/2 -rotate-2"></div>
+<div class="bg-ivory-light border border-choc-dark/10 h-28 flex items-center justify-center mb-4">
+<!-- Minimalist Pencil & Palette SVG -->
+<svg class="w-12 h-12 text-choc-dark" fill="none" viewbox="0 0 64 64">
+<path d="M16 48L22 24L44 12L52 20L40 42L16 48Z" stroke="currentColor" stroke-linejoin="round" stroke-width="2"></path>
+<path d="M22 24L40 42" stroke="currentColor" stroke-width="1.5"></path>
+</svg>
+</div>
+<h3 class="font-serif text-lg font-bold uppercase tracking-wide text-choc-dark mb-1">Drawing</h3>
+<p class="text-xs leading-relaxed text-choc-mid">
+            A way to turn imagination and ideas into visual forms.
+          </p>
+</article>
+<!-- Hobby 3: Reading -->
+<article class="relative bg-ivory-warm p-5 pt-7 border border-choc-dark/15 paper-shadow transform -rotate-2 hover:rotate-0 transition-transform duration-200 flex flex-col">
+<div class="masking-tape w-14 h-4 absolute -top-2 left-1/2 -translate-x-1/2 rotate-1"></div>
+<div class="bg-ivory-light border border-choc-dark/10 h-28 flex items-center justify-center mb-4">
+<!-- Minimalist Open Book SVG -->
+<svg class="w-12 h-12 text-choc-dark" fill="none" viewbox="0 0 64 64">
+<path d="M32 18C26 14 16 14 10 18V48C16 44 26 44 32 48C38 44 48 44 54 48V18C48 14 38 14 32 18Z" stroke="currentColor" stroke-linejoin="round" stroke-width="2"></path>
+<line stroke="currentColor" stroke-width="1.8" x1="32" x2="32" y1="18" y2="48"></line>
+</svg>
+</div>
+<h3 class="font-serif text-lg font-bold uppercase tracking-wide text-choc-dark mb-1">Reading</h3>
+<p class="text-xs leading-relaxed text-choc-mid">
+            A little journey to discover new knowledge and perspectives.
+          </p>
+</article>
+<!-- Hobby 4: Capturing Photos -->
+<article class="relative bg-ivory-warm p-5 pt-7 border border-choc-dark/15 paper-shadow transform rotate-2 hover:rotate-0 transition-transform duration-200 flex flex-col">
+<div class="masking-tape w-14 h-4 absolute -top-2 left-1/2 -translate-x-1/2 -rotate-1"></div>
+<div class="bg-ivory-light border border-choc-dark/10 h-28 flex items-center justify-center mb-4">
+<!-- Minimalist Camera SVG -->
+<svg class="w-12 h-12 text-choc-dark" fill="none" viewbox="0 0 64 64">
+<rect height="30" rx="3" stroke="currentColor" stroke-width="2" width="44" x="10" y="20"></rect>
+<path d="M22 20L26 14H38L42 20" stroke="currentColor" stroke-linejoin="round" stroke-width="2"></path>
+<circle cx="32" cy="35" r="8" stroke="currentColor" stroke-width="2"></circle>
+</svg>
+</div>
+<h3 class="font-serif text-lg font-bold uppercase tracking-wide text-choc-dark mb-1">Capturing Photos</h3>
+<p class="text-xs leading-relaxed text-choc-mid">
+            A way to keep moments and notice small details around me.
+          </p>
+</article>
+<!-- Hobby 5: Dance -->
+<article class="relative bg-ivory-warm p-5 pt-7 border border-choc-dark/15 paper-shadow transform -rotate-1 hover:rotate-0 transition-transform duration-200 flex flex-col">
+<div class="masking-tape w-14 h-4 absolute -top-2 left-1/2 -translate-x-1/2 rotate-3"></div>
+<div class="bg-ivory-light border border-choc-dark/10 h-28 flex items-center justify-center mb-4">
+<!-- Minimalist Music / Rhythm SVG -->
+<svg class="w-12 h-12 text-choc-dark" fill="none" viewbox="0 0 64 64">
+<path d="M24 44V18L48 14V40" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+<circle cx="19" cy="44" r="5" stroke="currentColor" stroke-width="2"></circle>
+<circle cx="43" cy="40" r="5" stroke="currentColor" stroke-width="2"></circle>
+</svg>
+</div>
+<h3 class="font-serif text-lg font-bold uppercase tracking-wide text-choc-dark mb-1">Dance</h3>
+<p class="text-xs leading-relaxed text-choc-mid">
+            A form of expression through movement, rhythm, and music.
+          </p>
+</article>
+</div>
+</section>
+<!-- END: ThingsILoveSection -->
+<!-- BEGIN: FeaturedProjectsSection -->
+<section aria-label="Featured Projects" class="bg-grid-sage rounded-sm p-6 sm:p-10 md:p-14 paper-shadow" data-purpose="featured-projects-section">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- Left: Large Cream Title Area -->
+<div class="lg:col-span-4 bg-ivory-warm p-6 sm:p-8 paper-shadow border border-choc-dark/15 lg:sticky lg:top-8">
+<p class="text-xs tracking-[0.2em] uppercase text-choc-mid font-semibold mb-2">
+            Selected Works
+          </p>
+<h2 class="font-serif text-3xl sm:text-4xl font-bold uppercase tracking-tight text-choc-dark leading-none mb-4">
+            Featured<br/>Projects
+          </h2>
+<p class="text-sm leading-relaxed text-choc-mid">
+            A collection of informational and data visualization projects exploring technology trends and user behavior in Indonesia.
+          </p>
+</div>
+<!-- Right: Printed Editorial Project Boards -->
+<div class="lg:col-span-8 space-y-8">
+<!-- Project 1: Infographic & Data Visualization -->
+<article class="bg-ivory-light p-6 sm:p-8 paper-shadow border border-choc-dark/15 relative">
+<div class="masking-tape w-24 h-5 absolute -top-2.5 right-8 rotate-2"></div>
+<span class="inline-block text-[11px] tracking-[0.18em] uppercase font-semibold text-gold-muted mb-2">
+              Infographic · Data Visualization
+            </span>
+<h3 class="font-serif text-2xl sm:text-3xl font-bold text-choc-dark leading-snug mb-4">
+              Which Mobile Phone Brands Are the Most Sought-After by People in Indonesia?
+            </h3>
+<!-- Visual Bar Chart Card -->
+<div class="bg-ivory-warm p-5 rounded-sm border border-choc-dark/10 space-y-3 mb-4">
+<p class="text-xs uppercase tracking-wider font-semibold text-choc-mid mb-2">
+                Mobile Vendor Market Share — Indonesia (Statcounter Global Stats)
+              </p>
+<!-- Apple: 20.78% -->
+<div>
+<div class="flex justify-between text-xs font-medium text-choc-dark mb-1">
+<span>Apple</span>
+<span>20.78%</span>
+</div>
+<div class="w-full bg-choc-dark/10 h-3 rounded-sm overflow-hidden">
+<div class="bg-choc-dark h-full" style="width: 20.78%;"></div>
+</div>
+</div>
+<!-- Samsung: 14.15% -->
+<div>
+<div class="flex justify-between text-xs font-medium text-choc-dark mb-1">
+<span>Samsung</span>
+<span>14.15%</span>
+</div>
+<div class="w-full bg-choc-dark/10 h-3 rounded-sm overflow-hidden">
+<div class="bg-choc-mid h-full" style="width: 14.15%;"></div>
+</div>
+</div>
+<!-- Oppo: 11.83% -->
+<div>
+<div class="flex justify-between text-xs font-medium text-choc-dark mb-1">
+<span>Oppo</span>
+<span>11.83%</span>
+</div>
+<div class="w-full bg-choc-dark/10 h-3 rounded-sm overflow-hidden">
+<div class="bg-gold-muted h-full" style="width: 11.83%;"></div>
+</div>
+</div>
+<!-- Xiaomi: 10.85% -->
+<div>
+<div class="flex justify-between text-xs font-medium text-choc-dark mb-1">
+<span>Xiaomi</span>
+<span>10.85%</span>
+</div>
+<div class="w-full bg-choc-dark/10 h-3 rounded-sm overflow-hidden">
+<div class="bg-choc-dark/70 h-full" style="width: 10.85%;"></div>
+</div>
+</div>
+<!-- Vivo: 9.21% -->
+<div>
+<div class="flex justify-between text-xs font-medium text-choc-dark mb-1">
+<span>Vivo</span>
+<span>9.21%</span>
+</div>
+<div class="w-full bg-choc-dark/10 h-3 rounded-sm overflow-hidden">
+<div class="bg-choc-dark/50 h-full" style="width: 9.21%;"></div>
+</div>
+</div>
+</div>
+<p class="text-xs text-choc-mid">
+              Source:
+              <a class="underline hover:text-choc-dark transition-colors" href="https://gs.statcounter.com/vendor-market-share/mobile/indonesia" rel="noopener noreferrer" target="_blank">
+                Statcounter Global Stats — Mobile Vendor Market Share Indonesia
+              </a>
+</p>
+</article>
+<!-- Project 2: Informational Project -->
+<article class="bg-ivory-light p-6 sm:p-8 paper-shadow border border-choc-dark/15 relative">
+<div class="masking-tape w-24 h-5 absolute -top-2.5 left-8 -rotate-2"></div>
+<span class="inline-block text-[11px] tracking-[0.18em] uppercase font-semibold text-gold-muted mb-2">
+              Informational Project · Technology
+            </span>
+<h3 class="font-serif text-2xl sm:text-3xl font-bold text-choc-dark leading-snug mb-3">
+              Why Are Apple Devices Highly Used in Indonesia?
+            </h3>
+<p class="text-sm leading-relaxed text-choc-mid">
+              An informational study exploring the key factors behind the strong adoption of Apple devices in Indonesia—including long-term device durability, consistent iOS software updates, an active second-hand iPhone market, brand prestige, and continued usability by subsequent owners.
+            </p>
+</article>
+</div>
+</div>
+</section>
+<!-- END: FeaturedProjectsSection -->
+<!-- BEGIN: PersonalQuoteSection -->
+<section aria-label="Personal Quote" class="flex justify-center py-4" data-purpose="quote-section">
+<div class="relative bg-ivory-warm max-w-3xl w-full p-8 sm:p-12 paper-shadow border border-choc-dark/15 text-center transform -rotate-1">
+<!-- Gold Star Pin -->
+<svg aria-hidden="true" class="w-7 h-7 text-gold-muted mx-auto mb-4" fill="currentColor" viewbox="0 0 24 24">
+<path d="M12 1L14.8 8.5L22.5 9.2L16.5 14.3L18.4 22L12 17.8L5.6 22L7.5 14.3L1.5 9.2L9.2 8.5L12 1Z"></path>
+</svg>
+<blockquote class="font-serif italic text-2xl sm:text-3xl text-choc-dark leading-relaxed">
+          “Teknologi adalah kanvasnya, dan kreativitas adalah warna untuk menghidupkannya.”
+        </blockquote>
+<p class="font-hand text-2xl text-choc-mid mt-4">— Anggun Adha Hanifa</p>
+</div>
+</section>
+<!-- END: PersonalQuoteSection -->
+<!-- BEGIN: ContactFooterSection -->
+<footer aria-label="Contact and Footer" class="bg-grid-choc text-ivory-warm rounded-sm p-8 sm:p-12 paper-shadow text-center" data-purpose="contact-footer-section">
+<h2 class="font-serif text-3xl sm:text-4xl font-bold uppercase tracking-wide text-ivory-light mb-2">
+        Let's Connect
+      </h2>
+<p class="text-sm sm:text-base text-ivory-warm/85 max-w-md mx-auto mb-6">
+        Terbuka untuk belajar, berbagi ide, dan berkolaborasi.
+      </p>
+<!-- Editable Placeholder Social Buttons -->
+<div class="flex flex-wrap justify-center gap-4 mb-10">
+<a aria-label="Instagram Profile" class="px-6 py-2.5 bg-ivory-warm text-choc-dark text-xs sm:text-sm font-semibold uppercase tracking-widest rounded-sm hover:bg-gold-muted hover:text-ivory-light transition-colors" href="#">
+          Instagram
+        </a>
+<a aria-label="Facebook Profile" class="px-6 py-2.5 border border-ivory-warm/50 text-ivory-warm text-xs sm:text-sm font-semibold uppercase tracking-widest rounded-sm hover:bg-ivory-warm hover:text-choc-dark transition-colors" href="#">
+          Facebook
+        </a>
+</div>
+<!-- Copyright Footer -->
+<div class="pt-6 border-t border-ivory-warm/15 text-xs tracking-wider text-ivory-warm/70">
+        © 2025 Anggun Adha Hanifa · Information Systems Student · ITPLN
+      </div>
+</footer>
+<!-- END: ContactFooterSection -->
+</main>
+</body></html>

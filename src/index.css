@@ -1,0 +1,102 @@
+@import "tailwindcss";
+
+@theme {
+  --color-dusty-pink: #E8B9B8;
+  --color-choc-dark: #4A211B;
+  --color-choc-mid: #54271F;
+  --color-ivory-warm: #F8F1D8;
+  --color-ivory-light: #FBF7E9;
+  --color-sage-pale: #D9D9A8;
+  --color-gold-muted: #B59A4D;
+
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-hand: "Caveat", cursive;
+  --font-body: "Lora", Georgia, serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #E8B9B8;
+    color: #4A211B;
+    font-family: "Lora", Georgia, serif;
+  }
+
+  button:focus-visible,
+  a:focus-visible,
+  input:focus-visible,
+  textarea:focus-visible {
+    outline: 2px solid #B59A4D;
+    outline-offset: 2px;
+  }
+}
+
+/* Fine square grid on dark chocolate brown */
+.bg-grid-choc {
+  background-color: #4A211B;
+  background-image:
+    linear-gradient(to right, rgba(248, 241, 216, 0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(248, 241, 216, 0.08) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+/* Fine square grid on warm ivory */
+.bg-grid-ivory {
+  background-color: #FBF7E9;
+  background-image:
+    linear-gradient(to right, rgba(74, 33, 27, 0.07) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(74, 33, 27, 0.07) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+/* Fine square grid on pale sage */
+.bg-grid-sage {
+  background-color: #D9D9A8;
+  background-image:
+    linear-gradient(to right, rgba(74, 33, 27, 0.09) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(74, 33, 27, 0.09) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+/* Subtle paper shadow */
+.paper-shadow {
+  box-shadow:
+    0 10px 25px -5px rgba(74, 33, 27, 0.18),
+    0 4px 10px -2px rgba(74, 33, 27, 0.1);
+}
+
+/* Dotted halftone pattern */
+.halftone-dots {
+  background-image: radial-gradient(#4A211B 1.25px, transparent 1.25px);
+  background-size: 7px 7px;
+}
+
+/* Dark masking tape with tiny star/floral dots */
+.masking-tape {
+  background-color: #4A211B;
+  background-image: radial-gradient(rgba(248, 241, 216, 0.55) 1.2px, transparent 1.2px);
+  background-size: 10px 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.18);
+  opacity: 0.92;
+}
+
+/* Double thin outline for hero card */
+.double-outline-card {
+  outline: 1.5px solid rgba(248, 241, 216, 0.55);
+  outline-offset: 6px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}
